@@ -151,22 +151,37 @@ img,svg{display:block;max-width:100%}
 
 @media(max-width:720px){
   .container{width:min(100% - 24px,1180px)}
-  .section-pad{padding:70px 0}
-  .nav-wrap{min-height:68px}
-  .brand strong{font-size:25px}
-  .menu-toggle{display:block;position:relative;z-index:110}
+  .section-pad{padding:64px 0}
+
+  /* Header móvil: el menú queda completamente fuera del layout hasta abrirlo. */
+  .site-header{background:rgba(248,244,235,.96)}
+  .nav-wrap{min-height:72px;padding:7px 0}
+  .brand{gap:10px}
+  .brand-icon{width:42px;height:42px;font-size:21px}
+  .brand strong{font-size:26px}
+  .brand small{font-size:9px;letter-spacing:.12em;margin-top:4px}
+  .menu-toggle{display:block;position:relative;z-index:120}
   .nav-cta{display:none}
-  .main-nav{position:fixed;inset:0;background:rgba(248,244,235,.98);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px;font-size:22px;transform:translateY(-105%);transition:.3s transform;z-index:105}
-  .main-nav.open{transform:none}
+  .main-nav{display:none;position:fixed;inset:0;height:100dvh;padding:104px 24px 36px;background:rgba(248,244,235,.99);flex-direction:column;justify-content:flex-start;align-items:center;gap:22px;font-size:22px;overflow-y:auto;z-index:110}
+  .main-nav.open{display:flex}
   .main-nav>a:not(.nav-cta){display:block;color:var(--green-900)}
-  .main-nav .nav-cta{display:inline-flex;font-size:15px;margin-top:10px}
-  .hero{padding-top:42px}
-  .hero h1{font-size:48px}
-  .hero-text{font-size:17px}
+  .main-nav .nav-cta{display:inline-flex;font-size:15px;margin-top:8px}
+
+  /* Hero móvil más compacto y legible. */
+  .hero{padding-top:28px}
+  .hero-grid{gap:34px}
+  .eyebrow{max-width:100%;font-size:11px;letter-spacing:.08em;text-align:center;justify-content:center}
+  .hero h1{font-size:clamp(40px,11.6vw,48px);line-height:1.01;margin-top:18px}
+  .hero-text{font-size:16px;line-height:1.65;margin-top:22px}
+  .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+  .hero-actions .btn{width:100%;min-height:50px;padding:0 14px;font-size:15px}
+  .trust-row{justify-content:center;margin-top:22px}
+  .trust-row span{font-size:12px}
+
   .hero-visual{min-height:420px;border-radius:30px}
   .product-stage{width:92%}.cup-main{width:210px;height:280px;left:13%;bottom:40px}.cup-body{height:225px}.cup-brand{font-size:32px}.fruit-layer{height:60px}.bottle-small{width:92px;height:230px;right:5%;bottom:52px}.bottle-body{height:198px}
   .hero-note{width:92px;height:92px;font-size:14px;right:15px;top:15px}
-  .section-heading{margin-bottom:36px}.section-heading h2{font-size:42px}
+  .section-heading{margin-bottom:36px}.section-heading h2{font-size:40px}
   .category-heading{align-items:start;flex-direction:column}.category-heading h3{font-size:30px}
   .product-grid,.product-grid-four,.product-grid-two{grid-template-columns:1fr}
   .product-visual{height:220px}
@@ -174,7 +189,12 @@ img,svg{display:block;max-width:100%}
   .benefit-card{min-height:auto}.benefit-number{margin-bottom:26px}
   .faq-grid{gap:34px}
   .cta-section{padding-bottom:70px}.cta-card{padding:32px 24px;flex-direction:column;align-items:flex-start;border-radius:28px}.cta-card .btn{width:100%}
-  .footer-grid{grid-template-columns:1fr}.floating-whatsapp{right:14px;bottom:14px}
+  .footer-grid{grid-template-columns:1fr}.floating-whatsapp{right:14px;bottom:calc(14px + env(safe-area-inset-bottom))}
+}
+
+@media(max-width:390px){
+  .hero h1{font-size:39px}
+  .hero-actions{grid-template-columns:1fr}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.product-card,.floating-whatsapp{transition:none}}
