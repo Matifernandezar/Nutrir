@@ -4,29 +4,104 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1f5138">
-  <meta name="description" content="Nutrir en Salta Capital: yogur griego con colchón de frutilla, yogur sin azúcar agregada, kéfir de agua y vinagre orgánico de sidra de manzana. Pedidos por WhatsApp.">
-  <meta name="robots" content="index,follow">
+
+  <title>Yogur griego en Salta | Nutrir · Kéfir y vinagre orgánico</title>
+  <meta name="description" content="Yogur griego en Salta Capital: con frutilla o sin azúcar agregada. Kéfir de agua y vinagre orgánico de sidra de manzana. Pedidos por WhatsApp.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://nutrir-three.vercel.app/">
+
+  <meta name="geo.region" content="AR-A">
+  <meta name="geo.placename" content="Salta Capital">
+
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
-  <meta property="og:title" content="Nutrir | Yogur griego y productos naturales en Salta">
-  <meta property="og:description" content="Yogur griego, kéfir de agua y vinagre orgánico de sidra de manzana en Salta Capital. Pedidos por WhatsApp.">
-  <title>Nutrir | Yogur griego y productos naturales en Salta</title>
+  <meta property="og:site_name" content="Nutrir">
+  <meta property="og:url" content="https://nutrir-three.vercel.app/">
+  <meta property="og:title" content="Yogur griego en Salta | Nutrir">
+  <meta property="og:description" content="Yogur griego con frutilla o sin azúcar agregada, kéfir de agua y vinagre orgánico de sidra de manzana en Salta Capital.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yogur griego en Salta | Nutrir">
+  <meta name="twitter:description" content="Yogur griego, kéfir de agua y vinagre orgánico de sidra de manzana en Salta Capital.">
+
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./seo.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Nutrir",
-    "description": "Yogur griego y productos naturales en Salta Capital.",
-    "telephone": "+54 9 387 584-8383",
-    "areaServed": "Salta Capital, Argentina",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Salta",
-      "addressRegion": "Salta",
-      "addressCountry": "AR"
-    },
-    "openingHours": "Mo-Su 00:00-23:59"
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://nutrir-three.vercel.app/#negocio",
+        "name": "Nutrir",
+        "url": "https://nutrir-three.vercel.app/",
+        "description": "Yogur griego, kéfir de agua y vinagre orgánico de sidra de manzana disponibles en Salta Capital.",
+        "telephone": "+54 9 387 584-8383",
+        "areaServed": {
+          "@type": "City",
+          "name": "Salta Capital"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Salta",
+          "addressRegion": "Salta",
+          "addressCountry": "AR"
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+54 9 387 584-8383",
+          "contactType": "sales",
+          "availableLanguage": "Spanish"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Productos Nutrir",
+          "itemListElement": [
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego con colchón de frutilla 150 g"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego con colchón de frutilla 250 g"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego sin colchón y sin azúcar agregada 250 g"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego sin colchón y sin azúcar agregada 350 g"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego sin colchón y sin azúcar agregada 500 g"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Yogur griego King 3 kg sin frutas"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Kéfir de agua 500 ml"}},
+            {"@type":"Offer","itemOffered":{"@type":"Product","name":"Vinagre orgánico de sidra de manzana 500 ml"}}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nutrir-three.vercel.app/#preguntas-frecuentes",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde comprar yogur griego en Salta Capital?",
+            "acceptedAnswer": {"@type":"Answer","text":"Podés pedir yogur griego Nutrir directamente por WhatsApp y también encontrar productos Nutrir en puntos de venta de Salta Capital como Kadabra Training Club y Raíz."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tienen yogur griego sin azúcar agregada en Salta?",
+            "acceptedAnswer": {"@type":"Answer","text":"Sí. Nutrir ofrece yogur griego sin colchón y sin azúcar agregada en presentaciones de 250 g, 350 g y 500 g, además del formato King de 3 kg sin frutas."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Venden kéfir de agua en Salta Capital?",
+            "acceptedAnswer": {"@type":"Answer","text":"Sí. Nutrir ofrece kéfir de agua en presentación de 500 ml. La disponibilidad se consulta por WhatsApp."}
+          },
+          {
+            "@type": "Question",
+            "name": "¿Venden vinagre orgánico de sidra de manzana en Salta?",
+            "acceptedAnswer": {"@type":"Answer","text":"Sí. Nutrir ofrece vinagre orgánico de sidra de manzana en presentación de 500 ml en Salta Capital."}
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -37,7 +112,7 @@
         <span class="brand-icon" aria-hidden="true">N</span>
         <span>
           <strong>Nutrir</strong>
-          <small>Productos naturales</small>
+          <small>Productos naturales · Salta</small>
         </span>
       </a>
 
@@ -47,10 +122,10 @@
 
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
         <a href="#productos">Productos</a>
-        <a href="#diferenciales">Por qué Nutrir</a>
-        <a href="#como-comprar">Cómo comprar</a>
+        <a href="#yogur-griego-salta">Yogur en Salta</a>
+        <a href="#puntos-de-venta">Dónde comprar</a>
         <a href="#preguntas">Preguntas</a>
-        <a class="nav-cta whatsapp-link" href="#" data-message="Hola Nutrir, quisiera consultar por sus productos.">Pedir por WhatsApp</a>
+        <a class="nav-cta whatsapp-link" href="#" data-message="Hola Nutrir, quisiera consultar por sus productos en Salta Capital.">Pedir por WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -60,22 +135,22 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <span class="eyebrow">Salta Capital · pedidos todos los días</span>
-          <h1>Yogur griego y productos naturales para disfrutar todos los días.</h1>
-          <p class="hero-text">En <strong>Nutrir</strong> encontrás yogur griego con colchón de frutilla, opciones sin colchón y sin azúcar agregada, kéfir de agua y vinagre orgánico de sidra de manzana.</p>
+          <h1>Yogur griego en Salta Capital y productos naturales Nutrir.</h1>
+          <p class="hero-text">Si buscás <strong>yogur griego en Salta</strong>, en Nutrir encontrás opciones con colchón de frutilla, variedades sin colchón y sin azúcar agregada, además de kéfir de agua y vinagre orgánico de sidra de manzana.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary whatsapp-link" href="#" data-message="Hola Nutrir, quisiera hacer un pedido.">Hacer un pedido</a>
+            <a class="btn btn-primary whatsapp-link" href="#" data-message="Hola Nutrir, quisiera hacer un pedido de yogur griego en Salta Capital.">Hacer un pedido</a>
             <a class="btn btn-secondary" href="#productos">Ver productos</a>
           </div>
 
           <div class="trust-row" aria-label="Características principales">
-            <span>Sin precios publicados</span>
+            <span>Yogur griego en Salta</span>
             <span>Consulta directa</span>
-            <span>Atención por WhatsApp</span>
+            <span>Puntos de venta</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Presentación visual de productos Nutrir">
+        <div class="hero-visual reveal" aria-label="Yogur griego y kéfir Nutrir en Salta">
           <div class="hero-blob"></div>
           <div class="product-stage">
             <div class="strawberries" aria-hidden="true">
@@ -101,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="hero-note">100% natural · Salta</div>
+          <div class="hero-note">Nutrir · Salta</div>
         </div>
       </div>
     </section>
@@ -109,18 +184,18 @@
     <section class="section-pad section-white" id="productos">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">Catálogo</span>
-          <h2>Elegí tu producto Nutrir</h2>
-          <p>No mostramos precios en la web. Tocá cualquier producto y consultá disponibilidad directamente por WhatsApp.</p>
+          <span class="eyebrow">Productos Nutrir</span>
+          <h2>Yogur griego, kéfir y vinagre orgánico en Salta</h2>
+          <p>Consultá disponibilidad y presentaciones directamente por WhatsApp. No publicamos precios en la web.</p>
         </div>
 
         <div class="category-block reveal">
           <div class="category-heading">
             <div>
-              <span class="category-kicker">Yogur griego</span>
+              <span class="category-kicker">Yogur griego en Salta</span>
               <h3>Con colchón de frutilla</h3>
             </div>
-            <span class="category-badge berry-badge">Frutilla</span>
+            <span class="category-badge berry-badge">150 g · 250 g</span>
           </div>
           <div class="product-grid" id="withFruitGrid"></div>
         </div>
@@ -128,10 +203,10 @@
         <div class="category-block reveal">
           <div class="category-heading">
             <div>
-              <span class="category-kicker">Yogur griego</span>
-              <h3>Sin colchón · sin azúcar agregada</h3>
+              <span class="category-kicker">Yogur griego sin azúcar agregada</span>
+              <h3>Sin colchón</h3>
             </div>
-            <span class="category-badge">Natural</span>
+            <span class="category-badge">250 g · 350 g · 500 g · 3 kg</span>
           </div>
           <div class="product-grid product-grid-four" id="plainGrid"></div>
         </div>
@@ -139,11 +214,80 @@
         <div class="category-block reveal">
           <div class="category-heading">
             <div>
-              <span class="category-kicker">Más Nutrir</span>
-              <h3>Fermentados y orgánicos</h3>
+              <span class="category-kicker">Productos naturales en Salta</span>
+              <h3>Kéfir de agua y vinagre orgánico</h3>
             </div>
           </div>
           <div class="product-grid product-grid-two" id="otherGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="yogur-griego-salta">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Nutrir en Salta Capital</span>
+          <h2>Comprar yogur griego y productos naturales en Salta</h2>
+          <p>Nutrir reúne distintas presentaciones para quienes buscan yogur griego, kéfir de agua y vinagre orgánico de sidra de manzana en Salta Capital. Podés consultar por WhatsApp o acercarte a nuestros puntos de venta.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-number">01</span>
+            <h3>Yogur griego con frutilla</h3>
+            <p>Con colchón de frutilla en presentaciones de 150 g y 250 g.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-number">02</span>
+            <h3>Yogur sin azúcar agregada</h3>
+            <p>Sin colchón en 250 g, 350 g y 500 g, más formato King de 3 kg sin frutas.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-number">03</span>
+            <h3>Kéfir de agua en Salta</h3>
+            <p>Disponible en presentación de 500 ml. Consultá disponibilidad por WhatsApp.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-number">04</span>
+            <h3>Vinagre orgánico de sidra</h3>
+            <p>Vinagre orgánico de sidra de manzana en presentación de 500 ml.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="retailers-section section-pad" id="puntos-de-venta">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Dónde comprar en Salta</span>
+          <h2>Puntos de venta de Nutrir en Salta Capital</h2>
+          <p>Además de pedir directamente por WhatsApp, ya podés encontrar productos Nutrir en estos puntos de venta.</p>
+        </div>
+
+        <div class="retailers-grid">
+          <article class="retailer-card reveal">
+            <div class="retailer-logo-wrap"><img src="./assets/kabadra.svg" alt="Kadabra Training Club, punto de venta de Nutrir en Salta Capital" loading="lazy"></div>
+            <div class="retailer-copy">
+              <span class="retailer-kicker">Punto de venta en Salta</span>
+              <h3>Kadabra Training Club</h3>
+              <p>Encontrá productos Nutrir en este punto de venta de Salta Capital.</p>
+            </div>
+          </article>
+
+          <article class="retailer-card reveal">
+            <div class="retailer-logo-wrap"><img src="./assets/raiz.svg" alt="Raíz, punto de venta de Nutrir en Salta Capital" loading="lazy"></div>
+            <div class="retailer-copy">
+              <span class="retailer-kicker">Punto de venta en Salta</span>
+              <h3>Raíz</h3>
+              <p>Encontrá productos Nutrir en este punto de venta de Salta Capital.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="retailers-note reveal">
+          <strong>¿Querés confirmar disponibilidad?</strong>
+          <span>Consultanos por WhatsApp antes de acercarte.</span>
+          <a class="btn btn-primary whatsapp-link" href="#" data-message="Hola Nutrir, quisiera saber qué productos hay disponibles en los puntos de venta de Salta Capital.">Consultar disponibilidad</a>
         </div>
       </div>
     </section>
@@ -152,15 +296,15 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Nutrir</span>
-          <h2>Simple, natural y directo</h2>
-          <p>Una página pensada para que encuentres rápido lo que buscás y hagas tu consulta sin vueltas.</p>
+          <h2>Productos naturales con atención directa en Salta</h2>
+          <p>Elegí la presentación que necesitás y consultá disponibilidad de forma simple.</p>
         </div>
 
         <div class="benefit-grid">
           <article class="benefit-card reveal">
             <span class="benefit-number">01</span>
-            <h3>Elaborado en Salta</h3>
-            <p>Productos ofrecidos desde Salta Capital, con atención directa.</p>
+            <h3>Disponible en Salta Capital</h3>
+            <p>Atención directa por WhatsApp y presencia en puntos de venta locales.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-number">02</span>
@@ -170,12 +314,12 @@
           <article class="benefit-card reveal">
             <span class="benefit-number">03</span>
             <h3>Colchón de frutilla</h3>
-            <p>Una alternativa frutada disponible en 150 g y 250 g.</p>
+            <p>Disponible en yogur griego de 150 g y 250 g.</p>
           </article>
           <article class="benefit-card reveal">
             <span class="benefit-number">04</span>
-            <h3>Consulta por WhatsApp</h3>
-            <p>Pedí disponibilidad y coordiná tu compra desde el celular.</p>
+            <h3>Pedidos por WhatsApp</h3>
+            <p>Consultá productos, presentaciones y disponibilidad desde el celular.</p>
           </article>
         </div>
       </div>
@@ -184,25 +328,16 @@
     <section class="section-pad section-white" id="como-comprar">
       <div class="container buy-grid">
         <div class="buy-copy reveal">
-          <span class="eyebrow">Cómo comprar</span>
+          <span class="eyebrow">Comprar Nutrir en Salta</span>
           <h2>Tu pedido en tres pasos</h2>
-          <p>La web funciona como catálogo. No necesitás registrarte ni completar formularios.</p>
-          <a class="btn btn-primary whatsapp-link" href="#" data-message="Hola Nutrir, quiero consultar disponibilidad para hacer un pedido.">Consultar ahora</a>
+          <p>La web funciona como catálogo. Elegís el producto, abrís WhatsApp y coordinás tu compra.</p>
+          <a class="btn btn-primary whatsapp-link" href="#" data-message="Hola Nutrir, quiero consultar disponibilidad para hacer un pedido en Salta Capital.">Consultar ahora</a>
         </div>
 
         <div class="steps reveal">
-          <article class="step-card">
-            <span>1</span>
-            <div><h3>Elegí</h3><p>Seleccioná el producto y la presentación que querés.</p></div>
-          </article>
-          <article class="step-card">
-            <span>2</span>
-            <div><h3>Consultá</h3><p>El botón abre WhatsApp con el producto ya escrito.</p></div>
-          </article>
-          <article class="step-card">
-            <span>3</span>
-            <div><h3>Coordiná</h3><p>Confirmá disponibilidad, forma de entrega y pago.</p></div>
-          </article>
+          <article class="step-card"><span>1</span><div><h3>Elegí</h3><p>Seleccioná el producto y la presentación que querés.</p></div></article>
+          <article class="step-card"><span>2</span><div><h3>Consultá</h3><p>El botón abre WhatsApp con el producto ya escrito.</p></div></article>
+          <article class="step-card"><span>3</span><div><h3>Coordiná</h3><p>Confirmá disponibilidad, forma de entrega y pago.</p></div></article>
         </div>
       </div>
     </section>
@@ -211,25 +346,33 @@
       <div class="container faq-grid">
         <div class="faq-intro reveal">
           <span class="eyebrow">Preguntas frecuentes</span>
-          <h2>Antes de pedir</h2>
-          <p>La información de disponibilidad, entrega y medios de pago se confirma por WhatsApp.</p>
+          <h2>Comprar productos Nutrir en Salta</h2>
+          <p>Información rápida sobre yogur griego, kéfir, vinagre orgánico y puntos de venta.</p>
         </div>
 
         <div class="faq-list reveal">
           <details>
-            <summary>¿Qué tamaños de yogur con frutilla tienen?</summary>
-            <p>150 g y 250 g, ambos con colchón de frutilla.</p>
+            <summary>¿Dónde comprar yogur griego en Salta Capital?</summary>
+            <p>Podés pedir yogur griego Nutrir directamente por WhatsApp y también encontrar productos Nutrir en Kadabra Training Club y Raíz, en Salta Capital.</p>
           </details>
           <details>
-            <summary>¿Qué tamaños vienen sin colchón?</summary>
-            <p>250 g, 350 g y 500 g sin colchón y sin azúcar agregada, más el formato King de 3 kg sin frutas.</p>
+            <summary>¿Tienen yogur griego sin azúcar agregada en Salta?</summary>
+            <p>Sí. Tenemos opciones sin colchón y sin azúcar agregada de 250 g, 350 g y 500 g, además del formato King de 3 kg sin frutas.</p>
           </details>
           <details>
-            <summary>¿También venden otros productos?</summary>
-            <p>Sí. Kéfir de agua de 500 ml y vinagre orgánico de sidra de manzana de 500 ml.</p>
+            <summary>¿Qué tamaños de yogur con colchón de frutilla tienen?</summary>
+            <p>Las presentaciones con colchón de frutilla son de 150 g y 250 g.</p>
           </details>
           <details>
-            <summary>¿Dónde consulto precios?</summary>
+            <summary>¿Venden kéfir de agua en Salta Capital?</summary>
+            <p>Sí. Nutrir ofrece kéfir de agua en presentación de 500 ml. Consultá disponibilidad por WhatsApp.</p>
+          </details>
+          <details>
+            <summary>¿Venden vinagre orgánico de sidra de manzana en Salta?</summary>
+            <p>Sí. Tenemos vinagre orgánico de sidra de manzana en presentación de 500 ml.</p>
+          </details>
+          <details>
+            <summary>¿Dónde consulto precios y disponibilidad?</summary>
             <p>Los precios no se publican en la web. Podés consultarlos directamente por WhatsApp.</p>
           </details>
         </div>
@@ -240,11 +383,11 @@
       <div class="container">
         <div class="cta-card reveal">
           <div>
-            <span class="eyebrow light">Pedidos</span>
-            <h2>¿Qué vas a pedir hoy?</h2>
+            <span class="eyebrow light">Pedidos en Salta</span>
+            <h2>¿Qué producto Nutrir buscás?</h2>
             <p>Escribinos y te confirmamos disponibilidad.</p>
           </div>
-          <a class="btn btn-light whatsapp-link" href="#" data-message="Hola Nutrir, quiero hacer un pedido.">Escribir por WhatsApp</a>
+          <a class="btn btn-light whatsapp-link" href="#" data-message="Hola Nutrir, quiero consultar productos disponibles en Salta Capital.">Escribir por WhatsApp</a>
         </div>
       </div>
     </section>
@@ -255,20 +398,20 @@
       <div>
         <a href="#inicio" class="brand footer-brand">
           <span class="brand-icon">N</span>
-          <span><strong>Nutrir</strong><small>Productos naturales</small></span>
+          <span><strong>Nutrir</strong><small>Productos naturales · Salta</small></span>
         </a>
-        <p>Yogur griego, kéfir de agua y vinagre orgánico de sidra de manzana en Salta Capital.</p>
+        <p>Yogur griego en Salta Capital, kéfir de agua y vinagre orgánico de sidra de manzana. Pedidos por WhatsApp y puntos de venta locales.</p>
       </div>
       <div class="footer-contact">
         <strong>Contacto</strong>
-        <a class="whatsapp-link" href="#" data-message="Hola Nutrir, quisiera hacer una consulta.">WhatsApp: 387 584-8383</a>
+        <a class="whatsapp-link" href="#" data-message="Hola Nutrir, quisiera hacer una consulta sobre sus productos en Salta.">WhatsApp: 387 584-8383</a>
         <span>Salta Capital, Argentina</span>
       </div>
     </div>
     <div class="container footer-bottom">© <span id="year"></span> Nutrir. Todos los derechos reservados.</div>
   </footer>
 
-  <a class="floating-whatsapp whatsapp-link" href="#" aria-label="Contactar a Nutrir por WhatsApp" data-message="Hola Nutrir, quisiera consultar por sus productos.">WA</a>
+  <a class="floating-whatsapp whatsapp-link" href="#" aria-label="Consultar productos Nutrir por WhatsApp en Salta Capital" data-message="Hola Nutrir, quisiera consultar por sus productos en Salta Capital.">WA</a>
 
   <script src="./script.js"></script>
 </body>
