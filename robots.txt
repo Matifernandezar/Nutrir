@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://nutrir-three.vercel.app/sitemap.xml
